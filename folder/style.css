@@ -1,9 +1,20 @@
 .box {
     width: 100px;
     height: 100px;
+    padding: 8%;
 }
 .grid{
     margin:0 auto;
     max-width: 50%;
-    height:auto;
+}
+.buttons{
+    width: 150px;
+}
+.fourButtons{
+    display:flex;
+    justify-content:center;
+}
+.resetPage{
+    float:left;
+    background-color:red;
 }
