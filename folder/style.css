@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     padding: 8%;
+    background-color:white;
 }
 .grid{
     margin:0 auto;
@@ -17,4 +18,7 @@
 .resetPage{
     float:left;
     background-color:red;
+}
+body{
+    background-color:aqua;
 }

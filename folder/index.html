@@ -19,7 +19,7 @@
             <div class="col-sm border border-dark box white"></div> 
         </div>
 
-        <div class="row"><!-- second row-->
+        <div class="row">
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
@@ -39,61 +39,63 @@
         <button type="button" class="buttons" id = "delColBtn">Delete Column</button>
     </div>
     <div class="">
-        <button type="button" class="resetPage" onClick="window.location.reload();">Reset Page</button>
+       <!-- clear all cells/restore all cells to their original/initial color -->
+        <button type="button" class="resetPage" onClick="window.location.reload();">Reset Cells</button>
     </div>
 
 </br>
-    <div class="">
+<!--                select a color from a dropdown menu of colors               -->
+    <div class="IndividualBoxes">
         <h6 class=py-2>Select from the following list and click on a box to change the color!</h6>
         <form>
-            <label for="">Choose a color:</label>
-            <select name="" id="">
+            <label for="changingOneBoxColor">Choose a color:</label>
+            <select id="changingOneBoxColorSelector">
                 <option value="red">Red</option>
-
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
             </select>
         </form>
     </div>
 
-    <div class="">
+    <div class="whiteToColor">
         <h6 class=py-2>Select a color and it will change all the <b>white</b> boxes to the color</h6>
         <form>
-            <label for="">Choose a color:</label>
-            <select name="" id="">
+            <label for="replaceWhite">Choose a color:</label>
+            <select id="replaceWhiteSelector">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
-                <option value="green">Red</option>
+                <option value="green">Green</option>
                 <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
             </select>
-            <button type="button" class=''>Fill all white boxes</button>
+            <button type="button" id='fillWhiteBoxes'>Fill all white boxes</button>
         </form>
     </div>
 
-    <div class="">
+    <div class="allBoxesToColor">
         <h6 class=py-2>Select a color and it will change ALL the boxes to the color</h6>
         <form>
-            <label for="">Choose a color:</label>
-            <select name="" id="">
+            <label for="changingAllBoxes">Choose a color:</label>
+            <select id="changingAllBoxesSelector">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
-                <option value="green">Red</option>
+                <option value="green">Green</option>
                 <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
             </select>
-            <button type="button" class=''>Fill all boxes</button>
+
+            <button type="button" id='changeAllBoxes'>Fill all boxes</button> 
         </form>
     </div>
 
-    <div class="">
+    <div class="dragColors">
         <h6 class=py-2>Select a color and then drag the color over the boxes to change them!</h6>
         <form>
-            <label for="">Choose a color:</label>
-            <select name="" id="">
+            <label for="colors">Choose a color:</label>
+            <select id="draggingColorSelector">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
-                <option value="green">Red</option>
+                <option value="green">Green</option>
                 <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
             </select>
         </form>
     </div>
