@@ -13,7 +13,13 @@
 <body>
 </br>
     <div class="grid">
-        <div class="row">
+        <div class="row"> <!-- first row-->
+            <div class="col-sm border border-dark box white"></div>
+            <div class="col-sm border border-dark box white"></div>
+            <div class="col-sm border border-dark box white"></div> <!-- these are individual boxes.-->
+        </div>
+
+        <div class="row"><!-- second row-->
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
@@ -24,20 +30,14 @@
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
         </div>
-
-        <div class="row">
-            <div class="col-sm border border-dark box white"></div>
-            <div class="col-sm border border-dark box white"></div>
-            <div class="col-sm border border-dark box white"></div>
-
-        </div>
+        <!-- to add a row, we would need to add a div class = "row" with three div class = "col-sm" -->
     </div>
 </br>
     <div class="fourButtons">
-        <button type="button" class="buttons">Add Row</button>
-        <button type="button" class="buttons">Delete Row</button>
-        <button type="button" class="buttons">Add Column</button>
-        <button type="button" class="buttons">Delete Column</button>
+        <button type="button" class="buttons" id="addRowBtn">Add Row</button>
+        <button type="button" class="buttons" id = "delRowBtn">Delete Row</button>
+        <button type="button" class="buttons" id="addColBtn">Add Column</button>
+        <button type="button" class="buttons" id = "delColBtn">Delete Column</button>
     </div>
     <div class="">
         <button type="button" class="resetPage" onClick="window.location.reload();">Reset Page</button>
@@ -92,7 +92,7 @@
         </form>
     </div>
 
-    <!-- don't forget to add your script file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
