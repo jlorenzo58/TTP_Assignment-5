@@ -11,9 +11,15 @@
 </head>
 
 <body>
-    <!-- Fix this so that it's not stretching from one side of the screen to the other-->
-    <div class="mt-5 content">
-        <div class="row">
+</br>
+    <div class="grid">
+        <div class="row"> <!-- first row-->
+            <div class="col-sm border border-dark box white"></div>
+            <div class="col-sm border border-dark box white"></div>
+            <div class="col-sm border border-dark box white"></div> <!-- these are individual boxes.-->
+        </div>
+
+        <div class="row"><!-- second row-->
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
@@ -24,26 +30,20 @@
             <div class="col-sm border border-dark box white"></div>
             <div class="col-sm border border-dark box white"></div>
         </div>
-
-        <div class="row">
-            <div class="col-sm border border-dark box white"></div>
-            <div class="col-sm border border-dark box white"></div>
-            <div class="col-sm border border-dark box white"></div>
-
-        </div>
+        <!-- to add a row, we would need to add a div class = "row" with three div class = "col-sm" -->
     </div>
-
-    <!-- BUTTONS: USE FLEXBOX TO ALIGN ITEMS NEATLY-->
+</br>
+    <div class="fourButtons">
+        <button type="button" class="buttons" id="addRowBtn">Add Row</button>
+        <button type="button" class="buttons" id = "delRowBtn">Delete Row</button>
+        <button type="button" class="buttons" id="addColBtn">Add Column</button>
+        <button type="button" class="buttons" id = "delColBtn">Delete Column</button>
+    </div>
     <div class="">
-        <button type="button" class="btn btn-dark my-3 add-row">Add Row</button>
-        <button type="button" class="btn btn-dark my-3 del-row">Delete Row</button>
-        <button type="button" class="btn btn-dark my-3 add-col">Add Column</button>
-        <button type="button" class="btn btn-dark my-3 del-col">Delete Column</button>
-    </div>
-    <div class="">
-        <button type="button" class="btn btn-danger m-3" onClick="window.location.reload();">Reset Page</button>
+        <button type="button" class="resetPage" onClick="window.location.reload();">Reset Page</button>
     </div>
 
+</br>
     <!-- ADD FLEXBOX TO ALIGN ITEMS in the center-->
     <div class="">
         <h6 class=py-2>Select from the following list and click on a box to change the color!</h6>
@@ -92,7 +92,7 @@
         </form>
     </div>
 
-    <!-- don't forget to add your script file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
