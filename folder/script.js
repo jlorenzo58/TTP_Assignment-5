@@ -62,4 +62,3 @@ delColBtn.onclick = ()=>{
     counter--;
 }
 
-
